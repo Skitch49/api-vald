@@ -60,3 +60,28 @@ module.exports.deleteClips = async (req, res) => {
   await post.deleteOne({ _id: clipId });
   res.status(200).json("Clip supprimé id :" + clipId);
 };
+
+module.exports.getClipsByDateRange = async (req, res) => {
+  try {
+    const { startDate, endDate } = req.params;
+
+    // Convertissez les dates en objets Date
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+
+    // Recherchez les clips dans l'intervalle de dates
+    const clips = await clipModel.find({
+      date: {
+        $gte: start,
+        $lte: end,
+      },
+    });
+
+    res.status(200).json(clips);
+  } catch (error) {
+    console.error("Erreur lors de la récupération des clips par intervalle de dates :", error);
+    res.status(500).json({
+      message: "Une erreur est survenue lors de la récupération des clips par intervalle de dates.",
+    });
+  }
+};
