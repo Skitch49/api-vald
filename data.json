@@ -1,18 +1,5 @@
 [{
   "_id": {
-    "$oid": "65a5595606e2d466e4565810"
-  },
-  "name": "Journal Perso",
-  "date": {
-    "$date": "2011-12-29T00:00:00.000Z"
-  },
-  "description": "Retrouvez le son sur la mixtape NQNTMQMQMB.",
-  "url": "https://youtu.be/UIWKUAK_rJg?si=4y4ZoZI6YK5FZGdH",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
     "$oid": "65a5595606e2d466e4565811"
   },
   "name": "CQFD",
@@ -20,20 +7,7 @@
     "$date": "2011-12-29T00:00:00.000Z"
   },
   "description": "Vous pourrez retrouver ce son sur la mixtape NQNTMQMQMB et sur NQNT.",
-  "url": "https://youtu.be/mKH0sZaY91s?si=GJ_ob-FLYcxxzXqK",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565812"
-  },
-  "name": "Winston",
-  "date": {
-    "$date": "2012-02-22T00:00:00.000Z"
-  },
-  "description": "Ce morceau fait partie de la tape NQNTMQMQMB.",
-  "url": "https://youtu.be/lnV6VoX9MHU?si=uqF9pQ5-leIX_zho",
+  "url": "mKH0sZaY91s",
   "artiste": "Vald",
   "featuring": []
 },
@@ -46,7 +20,7 @@
     "$date": "2012-04-08T00:00:00.000Z"
   },
   "description": "VALD feat AD - RENDEZ MOI (nulle part).",
-  "url": "https://youtu.be/Sjb2a61CvvM?si=G4rUwJM_DKrdZcRy",
+  "url": "Sjb2a61CvvM",
   "artiste": "Vald",
   "featuring": [
     "Suikon Blaz AD"
@@ -57,19 +31,6 @@
 },
 {
   "_id": {
-    "$oid": "65a5595606e2d466e4565814"
-  },
-  "name": "Smiley",
-  "date": {
-    "$date": "2012-04-11T00:00:00.000Z"
-  },
-  "description": "Vald - Smiley sur NQNTMQMQMB et sur NQNT.",
-  "url": "https://youtu.be/7tKVKG4jdQk?si=qTXucucnyoTGc_P8",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
     "$oid": "65a5595606e2d466e4565815"
   },
   "name": "Donkey Punch",
@@ -77,7 +38,7 @@
     "$date": "2012-05-07T00:00:00.000Z"
   },
   "description": "Vald -Donkey Punch (prod Goune) sur COURS DE RATTRAPAGE.",
-  "url": "https://youtu.be/EZX0OvBJ47Q?si=ZfYkk-yVzz-kcRe5",
+  "url": "EZX0OvBJ47Q",
   "artiste": "Vald",
   "featuring": []
 },
@@ -90,7 +51,7 @@
     "$date": "2012-07-07T00:00:00.000Z"
   },
   "description": "Vous pouvez retrouver Spirale sur COURS DE RATTRAPAGE.",
-  "url": "https://youtu.be/E0eAEe4aKOA?si=yWTE2jHNRP0uAZci",
+  "url": "E0eAEe4aKOA",
   "artiste": "Vald",
   "featuring": []
 },
@@ -103,20 +64,7 @@
     "$date": "2012-07-16T00:00:00.000Z"
   },
   "description": "Vous pouvez retrouver NQNT produit par Goune sur COURS DE RATTRAPAGE.",
-  "url": "https://youtu.be/WPY3xpilPD4?si=EFnfoeXgbu0QeinT",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565818"
-  },
-  "name": "John Doe",
-  "date": {
-    "$date": "2012-11-13T00:00:00.000Z"
-  },
-  "description": "Sur une prod de CELUI QU'ON BLAZE AD !!! Vous pouvez retrouver ce son sur COURS DE RATTRAPAGE.",
-  "url": "https://youtu.be/XvX1XL6cadg?si=psZUOamLY4FgHBzC",
+  "url": "WPY3xpilPD4",
   "artiste": "Vald",
   "featuring": []
 },
@@ -129,7 +77,7 @@
     "$date": "2012-12-16T00:00:00.000Z"
   },
   "description": "POUR SI PEU (prod Celui qu'on blaze AD) sur COURS DE RATTRAPAGE.",
-  "url": "https://youtu.be/7tOMCSSkbCg?si=17bNRe0v16tBFmUO",
+  "url": "7tOMCSSkbCg",
   "artiste": "Vald",
   "featuring": []
 },
@@ -142,98 +90,7 @@
     "$date": "2013-09-18T00:00:00.000Z"
   },
   "description": "Vald - Le Divan (prod Stan E music) non inclus sur NQNT.",
-  "url": "https://youtu.be/v1SHhdQmD1c?si=6gX0CPF8Q6lPV6Ds",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456581b"
-  },
-  "name": "Maizena",
-  "date": {
-    "$date": "2014-03-06T00:00:00.000Z"
-  },
-  "description": "[ I.N.C.H Prod ]",
-  "url": "https://youtu.be/MsOUSkLhPcA?si=hnrs5AO0aUikog-x",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456581c"
-  },
-  "name": "Autiste",
-  "date": {
-    "$date": "2014-06-30T00:00:00.000Z"
-  },
-  "description": "Premier extrait de l’EP « NQNT » (sortie le 27 octobre)",
-  "url": "https://youtu.be/E38USGqqc4Q?si=GrDI-T61cJLNkEru",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456581d"
-  },
-  "name": "Shoote Un Ministre",
-  "date": {
-    "$date": "2014-09-17T00:00:00.000Z"
-  },
-  "description": "Extrait de son projet « NQNT » (sortie le 27 octobre 2014)",
-  "url": "https://youtu.be/t1mDYSXXNec?si=ASooJw6F_hKiqYv9",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456581e"
-  },
-  "name": "Par Toutatis",
-  "date": {
-    "$date": "2014-10-07T00:00:00.000Z"
-  },
-  "description": "Extrait de son projet « NQNT » (sortie le 27 octobre 2014)",
-  "url": "https://youtu.be/SBWa_ZrlsMo?si=9yzgLjzOIDQ9KSRQ",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456581f"
-  },
-  "name": "I.N.C.H BEATS",
-  "date": {
-    "$date": "2014-10-21T00:00:00.000Z"
-  },
-  "description": "VALD - I.N.C.H BEATS (hors NQNT)",
-  "url": "https://youtu.be/Oys3tZ4Ans8?si=zNYpPt795yzDaHUe",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565820"
-  },
-  "name": "Vie de cochon",
-  "date": {
-    "$date": "2014-12-19T00:00:00.000Z"
-  },
-  "description": "Vie de cochon extrait de NQNT. Réalisé par Sirius et Merkus.",
-  "url": "https://youtu.be/QfEgKgbNUBQ?si=XNifbnxUP5dsh880",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565821"
-  },
-  "name": "GUSTAME",
-  "date": {
-    "$date": "2015-05-08T00:00:00.000Z"
-  },
-  "description": "VALD - GUSTAME V1 (PROD BBP) rare Hors projet.",
-  "url": "https://youtu.be/I6fLlorv3BA?si=MPATCZa955LAP0M1",
+  "url": "v1SHhdQmD1c",
   "artiste": "Vald",
   "featuring": []
 },
@@ -246,59 +103,7 @@
     "$date": "2015-06-03T00:00:00.000Z"
   },
   "description": "Bonjour, 1er extrait de NQNT 2 (sortie le 25 septembre 2015).",
-  "url": "https://youtu.be/x-VYdBKwSLc?si=LDShKNawTkJiPTpZ",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565823"
-  },
-  "name": "Gizeh",
-  "date": {
-    "$date": "2015-06-29T00:00:00.000Z"
-  },
-  "description": "Prod : BBP Hors Projet.",
-  "url": "https://youtu.be/hOZM2im0TVQ?si=ZYx8zX2ErkTouvC7",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565824"
-  },
-  "name": "Selfie",
-  "date": {
-    "$date": "2015-07-17T00:00:00.000Z"
-  },
-  "description": "Selfie, extrait de NQNT 2 (sortie le 25 septembre 2015). Clip avec Nikita Bellucci et Ian Scott.",
-  "url": "https://youtu.be/eGLcT1GaYrU?si=kKu0hTxVO1PWdIBH",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565825"
-  },
-  "name": "Écailles ",
-  "date": {
-    "$date": "2015-08-07T00:00:00.000Z"
-  },
-  "description": "Retrouvez le morceau écailles sur l'album de DJWEEDIM - Boulangerie Française Clip réalisé par @JuliusCRNG (PTPFG FILMS)",
-  "url": "https://youtu.be/kNaYV2jDork?si=3jm6bCRB7wNjD4eX",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565826"
-  },
-  "name": "Poisson",
-  "date": {
-    "$date": "2015-09-30T00:00:00.000Z"
-  },
-  "description": "Poisson, extrait de NQNT 2.",
-  "url": "https://youtu.be/k_YNwAZkoFc?si=Gtk1xmExjlj5L6Z1",
+  "url": "x-VYdBKwSLc",
   "artiste": "Vald",
   "featuring": []
 },
@@ -311,20 +116,7 @@
     "$date": "2015-11-13T00:00:00.000Z"
   },
   "description": "Vald \"Compas\", titre inédit produit par DJ Weedim. Clip réalisé par @JuliusCRNG (PTPFG Films)",
-  "url": "https://youtu.be/2jXBYwL8cRs?si=Zr-osEDGVHFEv50m",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565828"
-  },
-  "name": "Promesse",
-  "date": {
-    "$date": "2015-12-21T00:00:00.000Z"
-  },
-  "description": "Promesse\" extrait de NQNT2.",
-  "url": "https://youtu.be/Q4N91Rc0swU?si=sDFU3mySiP4WUP24",
+  "url": "2jXBYwL8cRs",
   "artiste": "Vald",
   "featuring": []
 },
@@ -337,20 +129,7 @@
     "$date": "2015-12-31T00:00:00.000Z"
   },
   "description": "Vald - Ostud (prod by Seezy) réal by Kub L'immortel.",
-  "url": "https://youtu.be/jI9vWKICqRw?si=eTqPMClAVKM8Fsfx",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456582a"
-  },
-  "name": "Barème",
-  "date": {
-    "$date": "2016-02-22T00:00:00.000Z"
-  },
-  "description": "\"Barème\"extrait de NQNT2.",
-  "url": "https://youtu.be/Egzwd3PMgr8?si=MCPx0GgIH0ASaotq",
+  "url": "jI9vWKICqRw",
   "artiste": "Vald",
   "featuring": []
 },
@@ -363,46 +142,7 @@
     "$date": "2016-04-01T00:00:00.000Z"
   },
   "description": "\"Infanticide\" extrait de NQNT2.",
-  "url": "https://youtu.be/hfp8WHiPJ4k?si=TKfoAiKyHADRG-N2",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456582c"
-  },
-  "name": "Envie",
-  "date": {
-    "$date": "2016-07-21T00:00:00.000Z"
-  },
-  "description": "Vald - Envie (prod Seezy) exclusif. Bonne vacances Réal by KAP10TIEN2.",
-  "url": "https://youtu.be/lA0FgzTvSUc?si=RmWedTJsOaohZ1jP",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456582d"
-  },
-  "name": "T'as Bien Mal",
-  "date": {
-    "$date": "2016-08-19T00:00:00.000Z"
-  },
-  "description": "Vald - T'as bien mal (Prod by Dj Weedim) Réal by KAP10TIEN2.",
-  "url": "https://youtu.be/KHuO8Qo8_KM?si=kG64wWqG4QBLiEeV",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456582e"
-  },
-  "name": "Eurotrap",
-  "date": {
-    "$date": "2016-10-21T00:00:00.000Z"
-  },
-  "description": "Vald - Eurotrap, 1er extrait de \"Agartha\".",
-  "url": "https://youtu.be/AjQbtKvi_Jw?si=7-BAR1edkwKyAOLH",
+  "url": "hfp8WHiPJ4k",
   "artiste": "Vald",
   "featuring": []
 },
@@ -415,46 +155,7 @@
     "$date": "2016-11-26T00:00:00.000Z"
   },
   "description": "Vald - La Réussite produit par Seezy exclue hors Agartha. Réalisé par PTPFG FILMS. Sortir un morceau pas mixé, Kanye West n'y avait pas pensé non plus.",
-  "url": "https://youtu.be/ZkjlDasg0iA?si=sYMLxaKtmf44ODvq",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565830"
-  },
-  "name": "Megadose",
-  "date": {
-    "$date": "2016-12-21T00:00:00.000Z"
-  },
-  "description": "Vald – Megadose, le nouvel extrait de \"Agartha\".",
-  "url": "https://youtu.be/bg30UXN89b8?si=iMsANAlTWHibltZ4",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565831"
-  },
-  "name": "Kid Cudi",
-  "date": {
-    "$date": "2017-01-20T00:00:00.000Z"
-  },
-  "description": "Vald - Kid cudi // le nouvel extrait de son 1er album \"\"Agartha\"\".",
-  "url": "https://youtu.be/aaNCF3hjd6A?si=JZxmkNzmuHCxUm5u",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565832"
-  },
-  "name": "Ma meilleure amie",
-  "date": {
-    "$date": "2017-02-09T00:00:00.000Z"
-  },
-  "description": "Vald - Ma meilleure amie // le nouveau clip de son 1er album \"Agartha\".",
-  "url": "https://youtu.be/bmCbMQ0QaZg?si=kD9ECp5W_P3z5pAD",
+  "url": "ZkjlDasg0iA",
   "artiste": "Vald",
   "featuring": []
 },
@@ -467,50 +168,11 @@
     "$date": "2017-04-03T00:00:00.000Z"
   },
   "description": "Vald \"\"Vitrine\"\" feat Damso // Nouvel extrait de \"\"Agartha\"\". Prod: @KiddSeezy. Avec la participation de: Jessie Volt, Cara st Germain, Anna polina. Réalisé par Kub&Cristo. Produit par Suther Kane & Mezoued.",
-  "url": "https://youtu.be/vfUFTHAQKeg?si=z2Me1yLzHfFDtgeM",
+  "url": "vfUFTHAQKeg",
   "artiste": "Vald",
   "featuring": [
     "Damso"
   ]
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565834"
-  },
-  "name": "Si j'arrêtais",
-  "date": {
-    "$date": "2017-05-17T00:00:00.000Z"
-  },
-  "description": "Vald \"Si j'arrêtais\" // Extrait de \"Agartha\". Prod: @BBP. Réalisé par Kub&Cristo. Produit par Suther Kane & Mezoued.",
-  "url": "https://youtu.be/YpulNdIgnSc?si=MX9dT2tIc2zrYVAF",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565835"
-  },
-  "name": "Trophée",
-  "date": {
-    "$date": "2017-09-09T00:00:00.000Z"
-  },
-  "description": "Vald \"\"Trophée\"\". Prod : Seezy. Réalisé par Kub&Cristo. Produit par Suther Kane.",
-  "url": "https://youtu.be/TRDo-23JagY?si=Z2c_7fGrbH6h8UxD",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565836"
-  },
-  "name": "Strip",
-  "date": {
-    "$date": "2017-12-29T00:00:00.000Z"
-  },
-  "description": "Vald \"\"Strip\"\" // Extrait de \"\"Agartha\"\". Prod : Seezy / Dolor. Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records",
-  "url": "https://youtu.be/g1JYvI-RbD4?si=zNFxn5Qm_AjYXClF",
-  "artiste": "Vald",
-  "featuring": []
 },
 {
   "_id": {
@@ -521,46 +183,7 @@
     "$date": "2017-09-29T00:00:00.000Z"
   },
   "description": "Vald \"\"Je t'aime\"\" // Extrait de \"\"Agartha\"\". Prod : DJ Weedim. Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records",
-  "url": "https://youtu.be/Gp647IWuYfA?si=GBwRgtUYDcaeqgx_",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565838"
-  },
-  "name": "Totem",
-  "date": {
-    "$date": "2017-09-29T00:00:00.000Z"
-  },
-  "description": "Vald \"\"Totem\"\" // Extrait de \"\"Agartha\"\". Prod : BBP / Seezy. Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records",
-  "url": "https://youtu.be/iYUSZUVCNNU?si=lprqDd9Iy8GOPAej",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565839"
-  },
-  "name": "L.D.S",
-  "date": {
-    "$date": "2017-09-29T00:00:00.000Z"
-  },
-  "description": "Vald \"\"L.D.S\"\" // Extrait de \"\"Agartha\"\". Prod : DJ Weedim. Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records",
-  "url": "https://youtu.be/jXnq18DE6Zg?si=qMl61gRvuLpaHz-F",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456583a"
-  },
-  "name": "Lezarman",
-  "date": {
-    "$date": "2017-09-29T00:00:00.000Z"
-  },
-  "description": "Vald \"\"Lezarman\"\" // Extrait de \"\"Agartha\"\". Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records. Animation réalisée par Dai Dai Tran @ Arthur & Nizar",
-  "url": "https://youtu.be/DT_YZW4krro?si=uvIw7kJvpGq23-GH",
+  "url": "Gp647IWuYfA",
   "artiste": "Vald",
   "featuring": []
 },
@@ -573,98 +196,7 @@
     "$date": "2018-01-25T00:00:00.000Z"
   },
   "description": "Vald - Désaccordé // Extrait de \"XEU\". Compositeur SEEZY. Clip réalisé par KUB et CRISTO pour SUTHER KANE FILMS",
-  "url": "https://youtu.be/kutk2XHEZNU?si=R6bHEudbUkHD3UE0",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456583c"
-  },
-  "name": "Gris",
-  "date": {
-    "$date": "2018-04-18T00:00:00.000Z"
-  },
-  "description": "Extrait de \"XEU\". Compositeur SIRIUS. Clip réalisé par Kub & Cristo pour SUTHER KANE FILMS",
-  "url": "https://youtu.be/IfC-nXlgaNU?si=CQ7gMae8O94rF2pM",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456583d"
-  },
-  "name": "Deviens génial",
-  "date": {
-    "$date": "2018-06-13T00:00:00.000Z"
-  },
-  "description": "Extrait de \"\"XEU\"\". Auteur : VALD. Compo : Seezy. Réalisé par KUB et CRISTO pour Suther kane Films. Avec la participation du Gospel C.G.P",
-  "url": "https://youtu.be/ZuMssIxmPT0?si=iLLzdWNdL9AFcZ_C",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456583e"
-  },
-  "name": "YAX3",
-  "date": {
-    "$date": "2018-10-19T00:00:00.000Z"
-  },
-  "description": "Extrait de \"\"NQNT 33\"\". Compositeur : Ovaground. Clip réalisé par Alex Haze pour Booska-P",
-  "url": "https://youtu.be/w0Z5nAN6jCs?si=nprG5ghDoKeYEpiD",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456583f"
-  },
-  "name": "Journal Perso 2",
-  "date": {
-    "$date": "2019-09-27T00:00:00.000Z"
-  },
-  "description": "JOURNAL PERSO 2 premier extrait du nouvel Album \"CE MONDE EST CRUEL\". Auteur VALD. Compositeur SEEZY. Réalisateurs : KUB & CRISTO. Producteurs : SUTHER KANE FILMS",
-  "url": "https://youtu.be/TUEhJmjfC28?si=lzKUQ0Al1JeWIpNZ",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565840"
-  },
-  "name": "Ignorant",
-  "date": {
-    "$date": "2019-11-13T00:00:00.000Z"
-  },
-  "description": "Ignorant nouvel extrait de l'album \"CE MONDE EST CRUEL\". Auteur VALD. Compositeur SEEZY. Tournage : Liza B sous la houlette de L'Immortel à L'iphone X. Montage et VFX: L'Immortel. Producteurs: Suther Kane Films et Mezoued Records",
-  "url": "https://youtu.be/IpAnhDUgr3s?si=pI3i5jBq4f9ATsZF",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565841"
-  },
-  "name": "Ce monde est cruel",
-  "date": {
-    "$date": "2019-11-15T00:00:00.000Z"
-  },
-  "description": "Vald - Ce monde est cruel // Extrait de \"Ce monde est cruel\". Compositeur SEEZY et TCHAMI. Clip réalisé par TONY T.DATIS pour HK COPR. Producteurs : SUTHER KANE FILMS",
-  "url": "https://youtu.be/SBZfaQubvvY?si=DDdPhk6LR2qFbVzV",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565842"
-  },
-  "name": "KESKIVONFER",
-  "date": {
-    "$date": "2020-02-06T00:00:00.000Z"
-  },
-  "description": "Vald - KESKIVONFER // Extrait de \"Ce monde est cruel\". Compositeur SEEZY. Clip réalisé par TONY LOPEZ MEDIA",
-  "url": "https://youtu.be/Al37AxccwMk?si=41NGOC3_LJ3JFp6_",
+  "url": "kutk2XHEZNU",
   "artiste": "Vald",
   "featuring": []
 },
@@ -677,7 +209,165 @@
     "$date": "2020-06-19T00:00:00.000Z"
   },
   "description": "Vald - Rappel // Extrait de \"Ce monde est cruel\". Compositeur ZEG-P. Arrangements SEEZY & Sofiane PAMART. Clip réalisé par VALD - KUB & CRISTO",
-  "url": "https://youtu.be/lB8uQ_zO-o8?si=frW684Xil5gU8V5i",
+  "url": "lB8uQ_zO-o8",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565846"
+  },
+  "name": "Royal cheese",
+  "date": {
+    "$date": "2020-12-18T00:00:00.000Z"
+  },
+  "description": "Vald + Heuss L'enfoiré - Royal cheese (Clip Officiel). Album en commun \"Horizon vertical\". Prod by Seezy & Zeg P. Réalisé par Kub & Cristo. Production : FAM Production",
+  "url": "3zPr7olHUu8",
+  "artiste": "Vald",
+  "featuring": [
+    "Heuss L'enfoiré"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565849"
+  },
+  "name": "Anunnaki",
+  "date": {
+    "$date": "2022-01-13T00:00:00.000Z"
+  },
+  "description": "Vald - Anunnaki (Clip officiel). Compositeur Aociz. Réalisateur : Kub & Cristo. Production : HK Corp",
+  "url": "uFnlCzgThS8",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565814"
+  },
+  "name": "Smiley",
+  "date": {
+    "$date": "2012-04-11T00:00:00.000Z"
+  },
+  "description": "Vald - Smiley sur NQNTMQMQMB et sur NQNT.",
+  "url": "7tKVKG4jdQk",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565818"
+  },
+  "name": "John Doe",
+  "date": {
+    "$date": "2012-11-13T00:00:00.000Z"
+  },
+  "description": "Sur une prod de CELUI QU'ON BLAZE AD !!! Vous pouvez retrouver ce son sur COURS DE RATTRAPAGE.",
+  "url": "XvX1XL6cadg",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456581e"
+  },
+  "name": "Par Toutatis",
+  "date": {
+    "$date": "2014-10-07T00:00:00.000Z"
+  },
+  "description": "Extrait de son projet « NQNT » (sortie le 27 octobre 2014)",
+  "url": "SBWa_ZrlsMo",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565821"
+  },
+  "name": "GUSTAME",
+  "date": {
+    "$date": "2015-05-08T00:00:00.000Z"
+  },
+  "description": "VALD - GUSTAME V1 (PROD BBP) rare Hors projet.",
+  "url": "I6fLlorv3BA",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565825"
+  },
+  "name": "Écailles ",
+  "date": {
+    "$date": "2015-08-07T00:00:00.000Z"
+  },
+  "description": "Retrouvez le morceau écailles sur l'album de DJWEEDIM - Boulangerie Française Clip réalisé par @JuliusCRNG (PTPFG FILMS)",
+  "url": "kNaYV2jDork",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565828"
+  },
+  "name": "Promesse",
+  "date": {
+    "$date": "2015-12-21T00:00:00.000Z"
+  },
+  "description": "Promesse\" extrait de NQNT2.",
+  "url": "Q4N91Rc0swU",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456582d"
+  },
+  "name": "T'as Bien Mal",
+  "date": {
+    "$date": "2016-08-19T00:00:00.000Z"
+  },
+  "description": "Vald - T'as bien mal (Prod by Dj Weedim) Réal by KAP10TIEN2.",
+  "url": "KHuO8Qo8_KM",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565835"
+  },
+  "name": "Trophée",
+  "date": {
+    "$date": "2017-09-09T00:00:00.000Z"
+  },
+  "description": "Vald \"\"Trophée\"\". Prod : Seezy. Réalisé par Kub&Cristo. Produit par Suther Kane.",
+  "url": "TRDo-23JagY",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456583f"
+  },
+  "name": "Journal Perso 2",
+  "date": {
+    "$date": "2019-09-27T00:00:00.000Z"
+  },
+  "description": "JOURNAL PERSO 2 premier extrait du nouvel Album \"CE MONDE EST CRUEL\". Auteur VALD. Compositeur SEEZY. Réalisateurs : KUB & CRISTO. Producteurs : SUTHER KANE FILMS",
+  "url": "TUEhJmjfC28",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565842"
+  },
+  "name": "KESKIVONFER",
+  "date": {
+    "$date": "2020-02-06T00:00:00.000Z"
+  },
+  "description": "Vald - KESKIVONFER // Extrait de \"Ce monde est cruel\". Compositeur SEEZY. Clip réalisé par TONY LOPEZ MEDIA",
+  "url": "Al37AxccwMk",
   "artiste": "Vald",
   "featuring": []
 },
@@ -690,50 +380,7 @@
     "$date": "2020-11-27T00:00:00.000Z"
   },
   "description": "Vald - GOTAGA // Extrait de \"ECHELON VOL1\". Compositeur SEEZY",
-  "url": "https://youtu.be/hhuvQGoGNWw?si=i6OnOs-DzO7bK60C",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565845"
-  },
-  "name": "Guccissima",
-  "date": {
-    "$date": "2020-12-03T00:00:00.000Z"
-  },
-  "description": "Vald + Heuss L'enfoiré - Guccissima (Clip Officiel). Album en commun \"Horizon Vertical\". Prod by Seezy & Zeg P. Clip réalisé par : Kub & Cristo. Production : FAM Prod",
-  "url": "https://youtu.be/kKLRuL5Sjgc?si=OD3UGzjqBMkC90Qj",
-  "artiste": "Vald",
-  "featuring": [
-    "Heuss L'enfoiré"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565846"
-  },
-  "name": "Royal cheese",
-  "date": {
-    "$date": "2020-12-18T00:00:00.000Z"
-  },
-  "description": "Vald + Heuss L'enfoiré - Royal cheese (Clip Officiel). Album en commun \"Horizon vertical\". Prod by Seezy & Zeg P. Réalisé par Kub & Cristo. Production : FAM Production",
-  "url": "https://youtu.be/3zPr7olHUu8?si=8-xRAyTe0cIPIbeD",
-  "artiste": "Vald",
-  "featuring": [
-    "Heuss L'enfoiré"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565847"
-  },
-  "name": "Footballeur",
-  "date": {
-    "$date": "2021-06-03T00:00:00.000Z"
-  },
-  "description": "Vald - Footballeur. Compositeur Zeg-P et Aociz. Réalisateur : Lionel Hirlé. Production : Glitch",
-  "url": "https://youtu.be/J4YkP30PQXU?si=1APjS-3MzU-7EJQn",
+  "url": "hhuvQGoGNWw",
   "artiste": "Vald",
   "featuring": []
 },
@@ -746,72 +393,7 @@
     "$date": "2021-12-16T00:00:00.000Z"
   },
   "description": "La Machine - prod by Seezy. Nouvelle industrie - prod by Seezy. Ce soir - prod by Ovaground. Where are my Lovers ? - prod by Aociz. Bien sur - prod by Hellboy. all Mixed by Sirius",
-  "url": "https://youtu.be/M1uedhyydjE?si=fimyn7Y8-jrkdiWw",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e4565849"
-  },
-  "name": "Anunnaki",
-  "date": {
-    "$date": "2022-01-13T00:00:00.000Z"
-  },
-  "description": "Vald - Anunnaki (Clip officiel). Compositeur Aociz. Réalisateur : Kub & Cristo. Production : HK Corp",
-  "url": "https://youtu.be/uFnlCzgThS8?si=evPtaoaSgRZHWU9O",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456584a"
-  },
-  "name": "Sur un nouvel album",
-  "date": {
-    "$date": "2022-02-04T00:00:00.000Z"
-  },
-  "description": "Prod by @IamSeezy \r\nMix Sirius\r\nMastering Masterdiskeurope",
-  "url": "https://youtu.be/3lSrvCaELqc?si=RsXTAGGslw4y0dfE",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456584b"
-  },
-  "name": "Pas deux fois",
-  "date": {
-    "$date": "2022-03-04T00:00:00.000Z"
-  },
-  "description": "Prod by Sirius\r\nMix Sirius\r\nMastering Masterdiskeurope",
-  "url": "https://youtu.be/Seq_iT0QIVw?si=R2hIRTgqpOH2YhYk",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456584c"
-  },
-  "name": "Péon",
-  "date": {
-    "$date": "2022-04-14T00:00:00.000Z"
-  },
-  "description": "Prod by @IamSeezy & HellBoy\r\nMix Sirius\r\nMastering Masterdiskeurope",
-  "url": "https://youtu.be/j3YH00VSCro?si=XINuUsJ3rmMQAXs0",
-  "artiste": "Vald",
-  "featuring": []
-},
-{
-  "_id": {
-    "$oid": "65a5595606e2d466e456584d"
-  },
-  "name": "Regarde toi",
-  "date": {
-    "$date": "2022-07-20T00:00:00.000Z"
-  },
-  "description": "Prod by @danysynthevevo3846 & @zegp5863 \r\narrangement Tchami & Seezy\r\nMix Sirius\r\nMastering Masterdiskeurope",
-  "url": "https://youtu.be/pMsyd4mvVBM?si=g5ZFl6yfr1yXUx0k",
+  "url": "M1uedhyydjE",
   "artiste": "Vald",
   "featuring": []
 },
@@ -824,7 +406,7 @@
     "$date": "2022-09-09T00:00:00.000Z"
   },
   "description": "Prod by @Seezy \r\nMix Sirius\r\nMastering Masterdiskeurope",
-  "url": "https://youtu.be/VAuqAOB-2nA?si=vi6iJwDEKHKTrCcn",
+  "url": "VAuqAOB-2nA",
   "artiste": "Vald",
   "featuring": []
 },
@@ -837,7 +419,412 @@
     "$date": "2022-11-11T00:00:00.000Z"
   },
   "description": "Prod by @Seezy \r\nMix NKF \r\nMastering Masterdiskeurope",
-  "url": "https://youtu.be/TZEB6L0nFnw?si=y_95H1lF6YIO8pFN",
+  "url": "TZEB6L0nFnw",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456581c"
+  },
+  "name": "Autiste",
+  "date": {
+    "$date": "2014-06-30T00:00:00.000Z"
+  },
+  "description": "Premier extrait de l’EP « NQNT » (sortie le 27 octobre)",
+  "url": "E38USGqqc4Q",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456581d"
+  },
+  "name": "Shoote Un Ministre",
+  "date": {
+    "$date": "2014-09-17T00:00:00.000Z"
+  },
+  "description": "Extrait de son projet « NQNT » (sortie le 27 octobre 2014)",
+  "url": "t1mDYSXXNec",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456581f"
+  },
+  "name": "I.N.C.H BEATS",
+  "date": {
+    "$date": "2014-10-21T00:00:00.000Z"
+  },
+  "description": "VALD - I.N.C.H BEATS (hors NQNT)",
+  "url": "Oys3tZ4Ans8",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565820"
+  },
+  "name": "Vie de cochon",
+  "date": {
+    "$date": "2014-12-19T00:00:00.000Z"
+  },
+  "description": "Vie de cochon extrait de NQNT. Réalisé par Sirius et Merkus.",
+  "url": "QfEgKgbNUBQ",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565826"
+  },
+  "name": "Poisson",
+  "date": {
+    "$date": "2015-09-30T00:00:00.000Z"
+  },
+  "description": "Poisson, extrait de NQNT 2.",
+  "url": "k_YNwAZkoFc",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456582a"
+  },
+  "name": "Barème",
+  "date": {
+    "$date": "2016-02-22T00:00:00.000Z"
+  },
+  "description": "\"Barème\"extrait de NQNT2.",
+  "url": "Egzwd3PMgr8",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565830"
+  },
+  "name": "Megadose",
+  "date": {
+    "$date": "2016-12-21T00:00:00.000Z"
+  },
+  "description": "Vald – Megadose, le nouvel extrait de \"Agartha\".",
+  "url": "bg30UXN89b8",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565832"
+  },
+  "name": "Ma meilleure amie",
+  "date": {
+    "$date": "2017-02-09T00:00:00.000Z"
+  },
+  "description": "Vald - Ma meilleure amie // le nouveau clip de son 1er album \"Agartha\".",
+  "url": "bmCbMQ0QaZg",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565834"
+  },
+  "name": "Si j'arrêtais",
+  "date": {
+    "$date": "2017-05-17T00:00:00.000Z"
+  },
+  "description": "Vald \"Si j'arrêtais\" // Extrait de \"Agartha\". Prod: @BBP. Réalisé par Kub&Cristo. Produit par Suther Kane & Mezoued.",
+  "url": "YpulNdIgnSc",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565836"
+  },
+  "name": "Strip",
+  "date": {
+    "$date": "2017-12-29T00:00:00.000Z"
+  },
+  "description": "Vald \"\"Strip\"\" // Extrait de \"\"Agartha\"\". Prod : Seezy / Dolor. Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records",
+  "url": "g1JYvI-RbD4",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456583a"
+  },
+  "name": "Lezarman",
+  "date": {
+    "$date": "2017-09-29T00:00:00.000Z"
+  },
+  "description": "Vald \"\"Lezarman\"\" // Extrait de \"\"Agartha\"\". Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records. Animation réalisée par Dai Dai Tran @ Arthur & Nizar",
+  "url": "DT_YZW4krro",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456583c"
+  },
+  "name": "Gris",
+  "date": {
+    "$date": "2018-04-18T00:00:00.000Z"
+  },
+  "description": "Extrait de \"XEU\". Compositeur SIRIUS. Clip réalisé par Kub & Cristo pour SUTHER KANE FILMS",
+  "url": "IfC-nXlgaNU",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456583d"
+  },
+  "name": "Deviens génial",
+  "date": {
+    "$date": "2018-06-13T00:00:00.000Z"
+  },
+  "description": "Extrait de \"\"XEU\"\". Auteur : VALD. Compo : Seezy. Réalisé par KUB et CRISTO pour Suther kane Films. Avec la participation du Gospel C.G.P",
+  "url": "ZuMssIxmPT0",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456583e"
+  },
+  "name": "YAX3",
+  "date": {
+    "$date": "2018-10-19T00:00:00.000Z"
+  },
+  "description": "Extrait de \"\"NQNT 33\"\". Compositeur : Ovaground. Clip réalisé par Alex Haze pour Booska-P",
+  "url": "w0Z5nAN6jCs",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565840"
+  },
+  "name": "Ignorant",
+  "date": {
+    "$date": "2019-11-13T00:00:00.000Z"
+  },
+  "description": "Ignorant nouvel extrait de l'album \"CE MONDE EST CRUEL\". Auteur VALD. Compositeur SEEZY. Tournage : Liza B sous la houlette de L'Immortel à L'iphone X. Montage et VFX: L'Immortel. Producteurs: Suther Kane Films et Mezoued Records",
+  "url": "IpAnhDUgr3s",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565845"
+  },
+  "name": "Guccissima",
+  "date": {
+    "$date": "2020-12-03T00:00:00.000Z"
+  },
+  "description": "Vald + Heuss L'enfoiré - Guccissima (Clip Officiel). Album en commun \"Horizon Vertical\". Prod by Seezy & Zeg P. Clip réalisé par : Kub & Cristo. Production : FAM Prod",
+  "url": "kKLRuL5Sjgc",
+  "artiste": "Vald",
+  "featuring": [
+    "Heuss L'enfoiré"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456584a"
+  },
+  "name": "Sur un nouvel album",
+  "date": {
+    "$date": "2022-02-04T00:00:00.000Z"
+  },
+  "description": "Prod by @IamSeezy \r\nMix Sirius\r\nMastering Masterdiskeurope",
+  "url": "3lSrvCaELqc",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456584b"
+  },
+  "name": "Pas deux fois",
+  "date": {
+    "$date": "2022-03-04T00:00:00.000Z"
+  },
+  "description": "Prod by Sirius\r\nMix Sirius\r\nMastering Masterdiskeurope",
+  "url": "Seq_iT0QIVw",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456584c"
+  },
+  "name": "Péon",
+  "date": {
+    "$date": "2022-04-14T00:00:00.000Z"
+  },
+  "description": "Prod by @IamSeezy & HellBoy\r\nMix Sirius\r\nMastering Masterdiskeurope",
+  "url": "j3YH00VSCro",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456584d"
+  },
+  "name": "Regarde toi",
+  "date": {
+    "$date": "2022-07-20T00:00:00.000Z"
+  },
+  "description": "Prod by @danysynthevevo3846 & @zegp5863 \r\narrangement Tchami & Seezy\r\nMix Sirius\r\nMastering Masterdiskeurope",
+  "url": "pMsyd4mvVBM",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565810"
+  },
+  "name": "Journal Perso",
+  "date": {
+    "$date": "2011-12-29T00:00:00.000Z"
+  },
+  "description": "Retrouvez le son sur la mixtape NQNTMQMQMB.",
+  "url": "UIWKUAK_rJg",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565812"
+  },
+  "name": "Winston",
+  "date": {
+    "$date": "2012-02-22T00:00:00.000Z"
+  },
+  "description": "Ce morceau fait partie de la tape NQNTMQMQMB.",
+  "url": "lnV6VoX9MHU",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565823"
+  },
+  "name": "Gizeh",
+  "date": {
+    "$date": "2015-06-29T00:00:00.000Z"
+  },
+  "description": "Prod : BBP Hors Projet.",
+  "url": "hOZM2im0TVQ",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565824"
+  },
+  "name": "Selfie",
+  "date": {
+    "$date": "2015-07-17T00:00:00.000Z"
+  },
+  "description": "Selfie, extrait de NQNT 2 (sortie le 25 septembre 2015). Clip avec Nikita Bellucci et Ian Scott.",
+  "url": "eGLcT1GaYrU",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456582c"
+  },
+  "name": "Envie",
+  "date": {
+    "$date": "2016-07-21T00:00:00.000Z"
+  },
+  "description": "Vald - Envie (prod Seezy) exclusif. Bonne vacances Réal by KAP10TIEN2.",
+  "url": "lA0FgzTvSUc",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e456582e"
+  },
+  "name": "Eurotrap",
+  "date": {
+    "$date": "2016-10-21T00:00:00.000Z"
+  },
+  "description": "Vald - Eurotrap, 1er extrait de \"Agartha\".",
+  "url": "AjQbtKvi_Jw",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565831"
+  },
+  "name": "Kid Cudi",
+  "date": {
+    "$date": "2017-01-20T00:00:00.000Z"
+  },
+  "description": "Vald - Kid cudi // le nouvel extrait de son 1er album \"\"Agartha\"\".",
+  "url": "aaNCF3hjd6A",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565838"
+  },
+  "name": "Totem",
+  "date": {
+    "$date": "2017-09-29T00:00:00.000Z"
+  },
+  "description": "Vald \"\"Totem\"\" // Extrait de \"\"Agartha\"\". Prod : BBP / Seezy. Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records",
+  "url": "iYUSZUVCNNU",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565839"
+  },
+  "name": "L.D.S",
+  "date": {
+    "$date": "2017-09-29T00:00:00.000Z"
+  },
+  "description": "Vald \"\"L.D.S\"\" // Extrait de \"\"Agartha\"\". Prod : DJ Weedim. Réalisé par : Kub&Cristo. Produit par : Suther Kane & Mezoued Records",
+  "url": "jXnq18DE6Zg",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565841"
+  },
+  "name": "Ce monde est cruel",
+  "date": {
+    "$date": "2019-11-15T00:00:00.000Z"
+  },
+  "description": "Vald - Ce monde est cruel // Extrait de \"Ce monde est cruel\". Compositeur SEEZY et TCHAMI. Clip réalisé par TONY T.DATIS pour HK COPR. Producteurs : SUTHER KANE FILMS",
+  "url": "SBZfaQubvvY",
+  "artiste": "Vald",
+  "featuring": []
+},
+{
+  "_id": {
+    "$oid": "65a5595606e2d466e4565847"
+  },
+  "name": "Footballeur",
+  "date": {
+    "$date": "2021-06-03T00:00:00.000Z"
+  },
+  "description": "Vald - Footballeur. Compositeur Zeg-P et Aociz. Réalisateur : Lionel Hirlé. Production : Glitch",
+  "url": "J4YkP30PQXU",
   "artiste": "Vald",
   "featuring": []
 }]

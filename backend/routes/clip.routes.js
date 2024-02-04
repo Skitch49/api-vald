@@ -2,13 +2,19 @@ const express = require("express");
 const {
   setClips,
   getClips,
+  getClipByUrl,
   getClipsByDateRange,
   editClips,
   deleteClips,
+  getLastClip,
 } = require("../controllers/clip.controller");
 const router = express.Router();
 
 router.get("/", getClips);
+
+router.get("/last-clip", getLastClip);
+
+router.get("/:url", getClipByUrl);
 
 router.post("/", setClips);
 

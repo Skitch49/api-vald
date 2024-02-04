@@ -5,6 +5,21 @@ module.exports.getClips = async (req, res) => {
   res.status(200).json(clips);
 };
 
+module.exports.getClipByUrl = async(req, res) => {
+  try {
+    const { url } = req.params;
+    const clip = await clipModel.findOne({ url });
+
+    if (!clip) {
+      return res.status(404).json({ message: "Clip not found" });
+    }
+
+    res.status(201).json(clip);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+};
 module.exports.setClips = async (req, res) => {
   try {
     if (
@@ -77,11 +92,29 @@ module.exports.getClipsByDateRange = async (req, res) => {
       },
     });
 
-    res.status(200).json(clips);
+    res.status(201).json(clips);
   } catch (error) {
-    console.error("Erreur lors de la récupération des clips par intervalle de dates :", error);
+    console.error(
+      "Erreur lors de la récupération des clips par intervalle de dates :",
+      error
+    );
     res.status(500).json({
-      message: "Une erreur est survenue lors de la récupération des clips par intervalle de dates.",
+      message:
+        "Une erreur est survenue lors de la récupération des clips par intervalle de dates.",
+    });
+  }
+};
+
+module.exports.getLastClip = async (req, res) => {
+  try {
+    const lastclip = await clipModel.findOne().sort({ date: -1 }).limit(1);
+    res.status(201).json(lastclip);
+  } catch (error) {
+    console.error("Erreur lors de la récupération du dernier clip :" + error);
+
+    res.status(500).json({
+      message:
+        "Une erreur est survenue lors de la récupération du dernier clip.",
     });
   }
 };
