@@ -18,13 +18,18 @@ const clipSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    artiste: {
-      type: String,
+    media: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "artiste",
       required: true,
     },
-    featuring: {
-      type: [String],
+    categorie:{
+        type: String,
     },
+    fanMade:{
+        type: Boolean,
+    },
+    likers: { type: [String] },
   },
   {
     timestamps: true,

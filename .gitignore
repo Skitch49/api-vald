@@ -1,4 +1,6 @@
 node_modules
 .env
-data.json
-api-vald.clips.json
+clips.json
+artistes.json
+old_data
+.dockerignore
