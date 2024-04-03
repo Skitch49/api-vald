@@ -10,7 +10,8 @@ const {
   searchClips,
   getClipsLiked,
   patchClipLiked,
-  patchClipDisliked
+  patchClipDisliked,
+  getAllVideosLiked
 } = require("../controllers/clip.controller");
 const router = express.Router();
 
@@ -35,6 +36,8 @@ router.get("/clip-liked/:userId", getClipsLiked);
 router.patch("/like-clip/:id",patchClipLiked);
 
 router.patch("/dislike-clip/:id/",patchClipDisliked);
+
+router.get("/all-video-liked/:userId", getAllVideosLiked);
 
 
 

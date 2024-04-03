@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const clipSchema = mongoose.Schema(
+const videoSchema = mongoose.Schema(
   {
     name: {
       type: String,
@@ -18,16 +18,13 @@ const clipSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    media: {
+    author: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "artiste",
-      required: true,
+      required:true
     },
     categorie:{
         type: String,
-    },
-    fanMade:{
-        type: Boolean,
     },
     likers: { type: [String] },
   },
@@ -36,4 +33,4 @@ const clipSchema = mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("Clip", clipSchema);
+module.exports = mongoose.model("Video", videoSchema);

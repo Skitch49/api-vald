@@ -1,5 +1,6 @@
 const clipModel = require("../models/clip.model");
-const artisteModel = require("../models/artiste.model"); // Assurez-vous d'importer le modèle artiste
+const artisteModel = require("../models/artiste.model");
+const videoModel = require("../models/video.model");
 
 module.exports.getClips = async (req, res) => {
   try {
@@ -108,6 +109,9 @@ module.exports.searchClips = async (req, res) => {
       return {
         $or: [
           { name: searchQuery },
+          { categorie: searchQuery },
+          { description: searchQuery },
+          { dateString: searchQuery },
           { "artisteDetails.nameArtiste": searchQuery },
           { "featuringDetails.nameArtiste": searchQuery },
           { "realDetails.nameArtiste": searchQuery },
@@ -115,11 +119,17 @@ module.exports.searchClips = async (req, res) => {
           { "masteringDetails.nameArtiste": searchQuery },
           { "mixDetails.nameArtiste": searchQuery },
           { "producedDetails.nameArtiste": searchQuery },
+          { "authorDetails.nameArtiste": searchQuery },
         ],
       };
     });
 
     const clips = await clipModel.aggregate([
+      {
+        $addFields: {
+          dateString: { $dateToString: { format: "%Y-%m-%d", date: "$date" } },
+        },
+      },
       {
         $lookup: {
           from: "artistes",
@@ -238,8 +248,52 @@ module.exports.searchClips = async (req, res) => {
         },
       },
     ]);
+    const videos = await videoModel.aggregate([
+      {
+        $addFields: {
+          dateString: { $dateToString: { format: "%Y-%m-%d", date: "$date" } },
+        },
+      },
+      {
+        $lookup: {
+          from: "artistes",
+          localField: "author",
+          foreignField: "_id",
+          as: "authorDetails",
+        },
+      },
+      { $match: { $and: keywords } },
+      {
+        $unwind: { path: "$authorDetails", preserveNullAndEmptyArrays: true },
+      },
+      {
+        $group: {
+          _id: "$_id",
+          name: { $first: "$name" },
+          date: { $first: "$date" },
+          description: { $first: "$description" },
+          url: { $first: "$url" },
+          author: { $first: "$authorDetails.nameArtiste" },
+          categorie: { $first: "$categories" },
+          likers: { $first: "$likers" },
+        },
+      },
+      {
+        $project: {
+          _id: 1,
+          name: 1,
+          date: 1,
+          description: 1,
+          url: 1,
+          author: 1,
+          categorie: 1,
+          likers: 1,
+        },
+      },
+    ]);
+    const allMedia = [...clips, ...videos]; // Combine clips and videos
 
-    res.status(200).json(clips);
+    res.status(200).json(allMedia);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error" });
@@ -500,6 +554,66 @@ module.exports.getClipsLiked = async (req, res) => {
     }
 
     res.status(201).json(clipsLiked);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" + error.message });
+  }
+};
+
+module.exports.getAllVideosLiked = async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const videosLiked = await videoModel.find({ likers: userId }).populate({
+      path: "author",
+      model: artisteModel,
+      select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+    });
+
+    const clipsLiked = await clipModel
+      .find({ likers: userId })
+      .populate({
+        path: "produced",
+        model: artisteModel,
+        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      })
+      .populate({
+        path: "mix",
+        model: artisteModel,
+        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      })
+      .populate({
+        path: "mastering",
+        model: artisteModel,
+        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      })
+      .populate({
+        path: "production",
+        model: artisteModel,
+        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      })
+      .populate({
+        path: "real",
+        model: artisteModel,
+        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      })
+      .populate({
+        path: "artiste",
+        model: artisteModel,
+        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      })
+      .populate({
+        path: "featuring",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      });
+
+    if (!clipsLiked.length && !videosLiked.length) {
+      res.status(201).json();
+    }
+
+    const AllVideosLiked = [...clipsLiked, ...videosLiked];
+
+    res.status(201).json(AllVideosLiked);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error" + error.message });

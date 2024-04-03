@@ -1,0 +1,642 @@
+[
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "name": "Concert Entier | Bercy 2019",
+    "date": {
+      "$date": "2019-11-16T00:00:00.000Z"
+    },
+    "description": "Le concert complet du premier bercy de Vald en 2019. Avec Heuss L'Enfoiré en première partie. Annecdote : c'est à ce concert que Vald et son équipe ont perdu 500 mille euros pour performer le meilleur show de sa vie !",
+    "url": "VN__ygGUAd4",
+    "author": {
+      "$oid": "1e471aba5cfa2c141ae87a46"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaaaaaaaab"
+    },
+    "name": "Cabaret Vert 2017",
+    "date": {
+      "$date": "2017-08-26T00:00:00.000Z"
+    },
+    "description": "Vidéo live de Arte Concert au Cabaret Vert.",
+    "url": "7503ZJH9OKw",
+    "author": {
+      "$oid": "be471ab15c9f2b14c5e87a46"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaaaaaaabb"
+    },
+    "name": "ZÉNITH PARIS Xeu Tour 2018",
+    "date": {
+      "$date": "2018-11-24T00:00:00.000Z"
+    },
+    "description": "Vidéo amateur lors du Zénith de Paris pour le Xeu Tour.",
+    "url": "un_iZtIBIIs",
+    "author": {
+      "$oid": "be671aba5d9f3d14cee8aab1"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaaaaaabbb"
+    },
+    "name": "Concert Entier | Bercy 2022",
+    "date": {
+      "$date": "2018-11-24T00:00:00.000Z"
+    },
+    "description": "Concert de Vald a l'Accord Hotel Arena de Paris. On peut retrouver le crew Échelon en première partie : CharlesBDL, Yonidas & Rafal.",
+    "url": "hl_AIijYAJU",
+    "author": {
+      "$oid": "ae674aba6d983d24ce28a7b1"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaaaaabbbb"
+    },
+    "name": "La Machine du Moulin Rouge 2014",
+    "date": {
+      "$date": "2014-03-29T00:00:00.000Z"
+    },
+    "description": "Concert de 2014 situer à la machine du moulin rouge en bonne qualité et en intégralité grace à CANAL STREET MUSIC. Vald interprétait  Donkey Punch, Tu Sais C'qui S'passe, CQFD, Smiley, Autiste et Shoote un ministre",
+    "url": "A9sIZV1RbXk",
+    "author": {
+      "$oid": "98a72ab74d986d5bcb28affa"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaaaabbbbb"
+    },
+    "name": "Qui dit mieux Bercy Orelsan 2018",
+    "date": {
+      "$date": "2018-12-07T00:00:00.000Z"
+    },
+    "description": "Vidéo du public de « Qui dit mieux » en live avec Gringe Vald & Suikon lors du bercy d'Orelsan.",
+    "url": "yV8g-60mRuI",
+    "author": {
+      "$oid": "a88f2ae79e96bd2cc228c18c"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaaabbbbbb"
+    },
+    "name": "Vitrine Bercy Damso 2018",
+    "date": {
+      "$date": "2018-12-04T00:00:00.000Z"
+    },
+    "description": "Vidéo du public de « Vitrine » en live avec Vald lors du bercy de Damso.",
+    "url": "sZLe4WKykLU",
+    "author": {
+      "$oid": "a88f2ae79e96bd2cc228c18c"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaaabbbbbbb"
+    },
+    "name": "Péon Bercy Orelsan 2022",
+    "date": {
+      "$date": "2022-03-18T00:00:00.000Z"
+    },
+    "description": "Vidéo du public de « Péon » en live avec Vald lors du bercy d'Orelsan.",
+    "url": "0qqHYmIeh44",
+    "author": {
+      "$oid": "148f4ae697968d22c238ce8a"
+    },
+    "categorie": "Concert",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaaabbbbbbbb"
+    },
+    "name": "Première écoute Agartha",
+    "date": {
+      "$date": "2017-01-30T00:00:00.000Z"
+    },
+    "description": "Première écoute d'Agartha par Amin & Hugo.",
+    "url": "LZcmvgFtGDI",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaaabbbbbbbbb"
+    },
+    "name": "Première écoute Xeu",
+    "date": {
+      "$date": "2018-02-01T00:00:00.000Z"
+    },
+    "description": "Première écoute de Xeu par Amin & Hugo.",
+    "url": "pJCgdZDeadk",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaaabbbbbbbbbb"
+    },
+    "name": "Première écoute NQNT33",
+    "date": {
+      "$date": "2018-09-28T00:00:00.000Z"
+    },
+    "description": "Première écoute de NQNT33 par Amin & Hugo.",
+    "url": "_Esff0GBuGA",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaaabbbbbbbbbbb"
+    },
+    "name": "Première écoute Ce monde est Cruel",
+    "date": {
+      "$date": "2019-10-11T00:00:00.000Z"
+    },
+    "description": "Première écoute de Ce monde est Cruel par Amin & Hugo.",
+    "url": "_v0-rFGGdSI",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaaabbbbbbbbbbbb"
+    },
+    "name": "Première écoute de Horizon Vertical",
+    "date": {
+      "$date": "2020-12-25T00:00:00.000Z"
+    },
+    "description": "Première écoute de Horizon Vertical par Amin & Hugo.",
+    "url": "OykWO0iqlDc",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaaabbbbbbbbbbbbb"
+    },
+    "name": "Première écoute de V",
+    "date": {
+      "$date": "2022-02-06T00:00:00.000Z"
+    },
+    "description": "Première écoute de V par Amin & Hugo.",
+    "url": "KMH6BsIkv-Y",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaaabbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute de VV5",
+    "date": {
+      "$date": "2023-01-10T00:00:00.000Z"
+    },
+    "description": "Première écoute de VV5 par Amin.",
+    "url": "9yqubo998ME",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaaabbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute de Bizzare",
+    "date": {
+      "$date": "2018-02-23T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Bizzare de Lorenzo feat Vald par Amin & Hugo.",
+    "url": "QRuaZG_WOeo",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaaabbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute de Désaccordé",
+    "date": {
+      "$date": "2017-12-30T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Désaccordé de Vald par Amin & Hugo.",
+    "url": "Gkde87O3lrw",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaaabbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute de Plus Haut",
+    "date": {
+      "$date": "2017-12-10T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Plus Haut d'Alkpote feat Vald par Amin & Hugo.",
+    "url": "vf7VnOYx4v0",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaaabbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute de Trophée",
+    "date": {
+      "$date": "2017-09-10T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Trophée de Vald par Amin & Hugo.",
+    "url": "1nCudRZSWKw",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbbbbbcccccc"
+    },
+    "name": "Première écoute - Woah",
+    "date": {
+      "$date": "2018-07-30T00:00:00.000Z"
+    },
+    "description": "Première écoute du titre Woah issue de 93 Empire feat Kalash Criminel, Vald, Soolking... par Amin & Hugo.",
+    "url": "dNR9n-li7gg",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaaabbbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute - Pas de Reine",
+    "date": {
+      "$date": "2020-10-24T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Pas de Reine de Koba LAD feat Vald par Amin & Hugo.",
+    "url": "rxO1n_2YZD4",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "faaaabbbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute - Le Retour du V",
+    "date": {
+      "$date": "2021-10-18T00:00:00.000Z"
+    },
+    "description": "Première écoute du retour du V par Amin & Hugo.",
+    "url": "ATBEmFqrWNw",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaaabbbbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute - Bitch",
+    "date": {
+      "$date": "2019-07-15T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Bitch de Lefa feat Vald par Amin & Hugo.",
+    "url": "jqhBtVd-R28",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aaabbbbbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute - GOTAGA",
+    "date": {
+      "$date": "2020-11-28T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Gotaga de Vald par Amin & Hugo.",
+    "url": "dYrt2Wz86S8",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "aabbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute - Anunnaki",
+    "date": {
+      "$date": "2022-01-11T00:00:00.000Z"
+    },
+    "description": "Première écoute du single Anunnaki de Vald par Amin & Hugo.",
+    "url": "Rux4a9PZ8bk",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "abbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute - Guccissima",
+    "date": {
+      "$date": "2020-12-05T00:00:00.000Z"
+    },
+    "description": "Première écoute du titre Guccissima de Vald feat Heuss L'Enfoirée par Amin & Hugo.",
+    "url": "_weDjsIfLzQ",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "name": "Première écoute - Matrixé",
+    "date": {
+      "$date": "2020-12-04T00:00:00.000Z"
+    },
+    "description": "Première écoute du titre Matrixé de Heuss L'Enfoirée feat Vald par Amin & Hugo.",
+    "url": "UELXXiycpc8",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbbbbbbbbbbc"
+    },
+    "name": "Première écoute - J'suis loin",
+    "date": {
+      "$date": "2019-06-22T00:00:00.000Z"
+    },
+    "description": "Première écoute du titre J'suis loin de Jul feat Vald par Amin & Hugo.",
+    "url": "gacKWJfUBFI",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbbbbbbbbbcc"
+    },
+    "name": "Première écoute - Doli",
+    "date": {
+      "$date": "2019-10-20T00:00:00.000Z"
+    },
+    "description": "Première écoute du titre bonus de Ce monde est Cruel Doli par Amin & Hugo.",
+    "url": "J8pw-D46mtg",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbbbbbbbbccc"
+    },
+    "name": "Première écoute - Persuadé",
+    "date": {
+      "$date": "2019-10-21T00:00:00.000Z"
+    },
+    "description": "Première écoute du titre bonus de Ce monde est Cruel Persuadé par Amin & Hugo.",
+    "url": "rRv4jtMfXX4",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbbbbbbbcccc"
+    },
+    "name": "Première écoute - Casimir",
+    "date": {
+      "$date": "2019-10-20T00:00:00.000Z"
+    },
+    "description": "Première écoute du titre bonus de Ce monde est Cruel Casimir par Amin & Hugo.",
+    "url": "0IcHtTxG4HM",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Amin & Hugo",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbbbcccccccc"
+    },
+    "name": "Killuminaty décrypte Mégadose de Vald",
+    "date": {
+      "$date": "2016-12-27T00:00:00.000Z"
+    },
+    "description": "Vald tourne à l'absurde le youtubeur Killuminaty SMG qui à pour habitude de décrypter des clips de rappeur en étant très complotiste. Tout en faissant la promo de ses T-shirt pour la tournée d'Agartha. Un coup de génie !",
+    "url": "ijtfwsGHaas",
+    "author": {
+      "$oid": "b48fbae6b796bd28c2346e8a"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbbcccccccccc"
+    },
+    "name": "VALD RÉAGIT À SES MEMES",
+    "date": {
+      "$date": "2022-02-03T00:00:00.000Z"
+    },
+    "description": "Interview de Lacrem dans laquel Vald fait le tour de ses memes légendaires dans ce nouveau « Face à toi MEME».",
+    "url": "uvKM6aotfBQ",
+    "author": {
+      "$oid": "b48fba16b59c2d288c347e89"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbbccccccccccc"
+    },
+    "name": "INTERVIEW VALD EN DIRECT SUR LCI",
+    "date": {
+      "$date": "2017-03-17T00:00:00.000Z"
+    },
+    "description": "Interview de Vald en direct de LCI avant son Olympia. Vald avoura plus tard avoir fait l'interview en étant très stressé avant de monter sur scène pour son premier Olympia. Pour anecdote, la journaliste à quitté LCI et c'est reconvertie dans l'armée. Merci à l'auteur de la vidéo de l'avoir reposter sur Youtube.",
+    "url": "m99EOgOg2Xg",
+    "author": {
+      "$oid": "a41fbb1be59f2da88c347e89"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbbcccccccccccc"
+    },
+    "name": "Vald au Jamel Comedy Club avec Alban Ivanov",
+    "date": {
+      "$date": "2017-06-01T00:00:00.000Z"
+    },
+    "description": "Interview de Vald pour la promo d'Agartha au Jamel Comedy Club par Alban Ivanov. Merci à l'auteur de la vidéo de l'avoir reposter sur Youtube.",
+    "url": "6hsVIfGKJI0",
+    "author": {
+      "$oid": "f4bfb51b759f2da88c347e89"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbbccccccccccccc"
+    },
+    "name": "interview VALD au JT de la réunion",
+    "date": {
+      "$date": "2018-06-20T00:00:00.000Z"
+    },
+    "description": "Interview de Vald dans le JT de la réunion pour la promo de Xeu avant un concert au Kabardock. Merci à l'auteur de la vidéo de l'avoir reposter sur Youtube.",
+    "url": "--O8l2FqXyQ",
+    "author": {
+      "$oid": "c41fb5cb719f2da88c347f29"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbbcccccccccccccc"
+    },
+    "name": "Découverte de VALD",
+    "date": {
+      "$date": "2013-12-17T00:00:00.000Z"
+    },
+    "description": "Vidéo créée par Vald en autodérision en reprenant les codes de tellement vraie pour la promo de shoot un ministre. Annectdote la musique en fond est le sample de branleur issue de NQNTMQMQMB.",
+    "url": "QCKulB0cdI8",
+    "author": {
+      "$oid": "5628236ae57a2c7c489d31b3"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbbccccccccccccccc"
+    },
+    "name": "Vald face à lui même",
+    "date": {
+      "$date": "2017-03-23T00:00:00.000Z"
+    },
+    "description": "Interview humoristique de Vald pour la promo de NQNT2 par Konbini. Merci à l'auteur de la vidéo de l'avoir reposter sur Youtube. A noté que ceci est la date de reposte sur Youtube.",
+    "url": "jw9ghvHcU3o",
+    "author": {
+      "$oid": "b123456b719f2da88c347f29"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbbcccccccccccccccc"
+    },
+    "name": "Eurotrap en live sur Canal+",
+    "date": {
+      "$date": "2017-01-08T00:00:00.000Z"
+    },
+    "description": "Vald en live dans Le Grand Journal avec Eurotrap sur Canal+.",
+    "url": "PVSTd2GzpjY",
+    "author": {
+      "$oid": "ba2f45eb719f2da88c347f29"
+    },
+    "categorie": "Humour",
+    "likers": []
+  },
+  {
+    "_id": {
+      "$oid": "bbbbbbbccccccccccccccccc"
+    },
+    "name": "V-ISIONNAIRE - Vald x Spotify",
+    "date": {
+      "$date": "2022-04-29T00:00:00.000Z"
+    },
+    "description": "Le temps de 30 minutes à travers les univers, Vald nous parle de son parcours, d'amour, d'humour, et du futur. Une interview Spotify hors du temps composé de 5 chapitres : Scientifique, déterminée, drôle, amoureux & Visionnaire.",
+    "url": "KPAVBJy3XA0",
+    "author": {
+      "$oid": "66c8ab3a70c55d60c9dd6568"
+    },
+    "categorie": "Interview V",
+    "likers": []
+  }
+]

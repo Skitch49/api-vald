@@ -17,6 +17,8 @@ app.use("/clip", require("./routes/clip.routes"));
 
 app.use("/artiste", require("./routes/artiste.routes"));
 
+app.use("/video", require("./routes/video.routes"));
+
 app.get("/", (req, res) => {
   res.json({ message: "Voici les clips de vald" });
 });
