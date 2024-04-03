@@ -607,15 +607,68 @@ module.exports.getAllVideosLiked = async (req, res) => {
         select: "nameArtiste socialMedia",
       });
 
-    if (!clipsLiked.length && !videosLiked.length) {
-      res.status(201).json();
-    }
-
     const AllVideosLiked = [...clipsLiked, ...videosLiked];
 
     res.status(201).json(AllVideosLiked);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error" + error.message });
+  }
+};
+
+module.exports.getAllVideosByCategory = async (req, res) => {
+  try {
+    const { categorie } = req.params;
+
+    const clips = await clipModel
+      .find({ categorie })
+      .populate({
+        path: "produced",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "mix",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "mastering",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "production",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "real",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "artiste",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "featuring",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      });
+
+    const videos = await videoModel.find({ categorie }).populate({
+      path: "author",
+      model: artisteModel,
+      select: "nameArtiste socialMedia",
+    });
+
+    const AllVideosByCat = [...clips, ...videos];
+
+    res.status(200).json(AllVideosByCat);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 };

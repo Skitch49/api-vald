@@ -18,6 +18,10 @@ const clipSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    categorie:{
+      type: String,
+      required: true,
+    },
     produced: {
       type: [{ type: mongoose.Schema.Types.ObjectId, ref: "artiste" }],
     },

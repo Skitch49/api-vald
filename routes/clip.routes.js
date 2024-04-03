@@ -11,8 +11,10 @@ const {
   getClipsLiked,
   patchClipLiked,
   patchClipDisliked,
-  getAllVideosLiked
+  getAllVideosLiked,
+  getAllVideosByCategory,
 } = require("../controllers/clip.controller");
+
 const router = express.Router();
 
 router.get("/", getClips);
@@ -33,12 +35,12 @@ router.get("/date-range/:startDate/:endDate", getClipsByDateRange);
 
 router.get("/clip-liked/:userId", getClipsLiked);
 
-router.patch("/like-clip/:id",patchClipLiked);
+router.patch("/like-clip/:id", patchClipLiked);
 
-router.patch("/dislike-clip/:id/",patchClipDisliked);
+router.patch("/dislike-clip/:id/", patchClipDisliked);
 
 router.get("/all-video-liked/:userId", getAllVideosLiked);
 
-
+router.get("/categories/:categorie", getAllVideosByCategory);
 
 module.exports = router;
