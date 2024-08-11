@@ -1,6 +1,7 @@
 node_modules
 .env
 clips.json
+videos.json
 artistes.json
 old_data
 .dockerignore

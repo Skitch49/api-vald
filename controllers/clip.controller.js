@@ -302,9 +302,22 @@ module.exports.searchClips = async (req, res) => {
 
 module.exports.setClips = async (req, res) => {
   try {
-    const { name, date, description, url, artiste, featuring } = req.body;
+    const {
+      name,
+      date,
+      description,
+      url,
+      categorie,
+      produced,
+      mix,
+      mastering,
+      production,
+      real,
+      artiste,
+      featuring,
+    } = req.body;
 
-    if (!name || !date || !description || !url || !artiste) {
+    if (!name || !date || !description || !url || !categorie || !artiste) {
       return res.status(400).json({
         message:
           "Merci de fournir toutes les informations nécessaires pour créer un clip.",
@@ -316,9 +329,29 @@ module.exports.setClips = async (req, res) => {
       date,
       description,
       url,
+      categorie,
       artiste,
-      featuring: featuring || [], // Si aucun featuring n'est fourni, utilise un tableau vide
     });
+
+    // Ajouter les champs optionnels uniquement s'ils contiennent des valeurs
+    if (Array.isArray(produced) && produced.length > 0) {
+      clip.produced = produced;
+    }
+    if (Array.isArray(mix) && mix.length > 0) {
+      clip.mix = mix;
+    }
+    if (mastering) {
+      clip.mastering = mastering;
+    }
+    if (Array.isArray(production) && production.length > 0) {
+      clip.production = production;
+    }
+    if (real) {
+      clip.real = real;
+    }
+    if (Array.isArray(featuring) && featuring.length > 0) {
+      clip.featuring = featuring;
+    }
 
     res.status(201).json({ message: "Clip créé avec succès", clip });
   } catch (error) {
