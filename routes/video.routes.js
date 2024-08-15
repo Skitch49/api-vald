@@ -1,5 +1,5 @@
 const express = require("express");
-const { getVideos, getLastVideo, getVideoByUrl, setVideo, patchVideoLiked, getVideosLiked, patchVideoDisliked,getVideosByCategory } = require("../controllers/video.controller");
+const { getVideos, getLastVideo, getVideoByUrl, setVideo, patchVideoLiked, getVideosLiked, patchVideoDisliked,getVideosByCategory,editVideo } = require("../controllers/video.controller");
 const router = express.Router();
 
 router.get("/", getVideos);
@@ -12,7 +12,7 @@ router.get("/:url", getVideoByUrl);
 
 router.post("/", setVideo);
 
-// router.put("/:id", editClips);
+router.put("/:id", editVideo);
 
 // router.delete("/:id", deleteClips);
 

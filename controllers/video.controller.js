@@ -81,28 +81,29 @@ module.exports.getVideosByCategory = async (req, res) => {
   }
 };
 
-// module.exports.editClips = async (req, res) => {
-//   try {
-//     const clip = await clipModel.findById(req.params.id);
 
-//     if (!clip) {
-//       return res.status(400).json({ message: "Ce clip n'existe pas !" });
-//     }
+module.exports.editVideo = async (req, res) => {
+  try {
+    const video = await videoModel.findById(req.params.id);
 
-//     const updatedClip = await clipModel.findByIdAndUpdate(
-//       req.params.id,
-//       req.body,
-//       { new: true }
-//     );
+    if (!video) {
+      return res.status(400).json({ message: "CEtte video n'existe pas !" });
+    }
 
-//     res.status(200).json(updatedClip);
-//   } catch (error) {
-//     console.error("Erreur lors de la mise à jour du clip :", error);
-//     res.status(500).json({
-//       message: "Une erreur est survenue lors de la mise à jour du clip.",
-//     });
-//   }
-// };
+    const updatedVideo = await videoModel.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+
+    res.status(200).json(updatedVideo);
+  } catch (error) {
+    console.error("Erreur lors de la mise à jour de la video :", error);
+    res.status(500).json({
+      message: "Une erreur est survenue lors de la mise à jour de la video.",
+    });
+  }
+};
 
 // module.exports.deleteClips = async (req, res) => {
 //   try {
