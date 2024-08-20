@@ -1,5 +1,16 @@
 const express = require("express");
-const { getVideos, getLastVideo, getVideoByUrl, setVideo, patchVideoLiked, getVideosLiked, patchVideoDisliked,getVideosByCategory,editVideo } = require("../controllers/video.controller");
+const {
+  getVideos,
+  getLastVideo,
+  getVideoByUrl,
+  setVideo,
+  patchVideoLiked,
+  getVideosLiked,
+  patchVideoDisliked,
+  getVideosByCategory,
+  editVideo,
+  deleteVideos,
+} = require("../controllers/video.controller");
 const router = express.Router();
 
 router.get("/", getVideos);
@@ -14,17 +25,15 @@ router.post("/", setVideo);
 
 router.put("/:id", editVideo);
 
-// router.delete("/:id", deleteClips);
+router.delete("/:id", deleteVideos);
 
-router.get("/categories/:categorie",getVideosByCategory)
+router.get("/categories/:categorie", getVideosByCategory);
 // router.get("/date-range/:startDate/:endDate", getClipsByDateRange);
 
 router.get("/video-liked/:userId", getVideosLiked);
 
-router.patch("/like-video/:id",patchVideoLiked);
+router.patch("/like-video/:id", patchVideoLiked);
 
-router.patch("/dislike-video/:id/",patchVideoDisliked);
-
-
+router.patch("/dislike-video/:id/", patchVideoDisliked);
 
 module.exports = router;

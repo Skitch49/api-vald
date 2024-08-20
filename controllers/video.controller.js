@@ -1,5 +1,5 @@
 const videoModel = require("../models/video.model");
-const artisteModel = require("../models/artiste.model"); 
+const artisteModel = require("../models/artiste.model");
 module.exports.getVideos = async (req, res) => {
   try {
     const videos = await videoModel.find().populate({
@@ -81,13 +81,12 @@ module.exports.getVideosByCategory = async (req, res) => {
   }
 };
 
-
 module.exports.editVideo = async (req, res) => {
   try {
     const video = await videoModel.findById(req.params.id);
 
     if (!video) {
-      return res.status(400).json({ message: "CEtte video n'existe pas !" });
+      return res.status(400).json({ message: "Cette video n'existe pas !" });
     }
 
     const updatedVideo = await videoModel.findByIdAndUpdate(
@@ -105,22 +104,22 @@ module.exports.editVideo = async (req, res) => {
   }
 };
 
-// module.exports.deleteClips = async (req, res) => {
-//   try {
-//     const clip = await clipModel.findById(req.params.id);
+module.exports.deleteVideos = async (req, res) => {
+  try {
+    const video = await videoModel.findById(req.params.id);
 
-//     if (!clip) {
-//       return res.status(400).json({ message: "Ce clip n'existe pas !" });
-//     }
-//     await clipModel.deleteOne({ _id: req.params.id });
-//     res.status(200).json({ message: "Clip supprimé id :" + req.params.id });
-//   } catch (error) {
-//     console.error("Erreur lors de la suppression du clip :", error);
-//     res.status(500).json({
-//       message: "Une erreur est survenue lors de la suppression du clip.",
-//     });
-//   }
-// };
+    if (!video) {
+      return res.status(400).json({ message: "Cette vidéo n'existe pas !" });
+    }
+    await videoModel.deleteOne({ _id: req.params.id });
+    res.status(200).json({ message: "Vidéo supprimé id :" + req.params.id });
+  } catch (error) {
+    console.error("Erreur lors de la suppression de la vidéo :", error);
+    res.status(500).json({
+      message: "Une erreur est survenue lors de la suppression de la vidéo.",
+    });
+  }
+};
 
 // module.exports.getClipsByDateRange = async (req, res) => {
 //   try {
@@ -252,5 +251,3 @@ module.exports.getVideosLiked = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" + error.message });
   }
 };
-
-
