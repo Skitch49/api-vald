@@ -50,17 +50,17 @@ Une fois l'API démarrée, vous pouvez interagir avec les différentes ressource
 
 | Méthode | Endpoint | Description |
 |---------|---------|-------------|
-| **GET** | `/api/videos/` | Récupère toutes les vidéos. |
-| **GET** | `/api/videos/last-video` | Récupère la dernière vidéo ajoutée. |
-| **GET** | `/api/videos/:url` | Récupère une vidéo spécifique via son URL. |
-| **POST** | `/api/videos/` | Ajoute une nouvelle vidéo. |
-| **PUT** | `/api/videos/:id` | Modifie une vidéo existante. |
-| **DELETE** | `/api/videos/:id` | Supprime une vidéo. |
-| **GET** | `/api/videos/categories/:categorie` | Récupère les vidéos d’une catégorie spécifique. |
-| **GET** | `/api/videos/video-liked/:userId` | Récupère les vidéos aimées par un utilisateur. |
-| **PATCH** | `/api/videos/like-video/:id` | Ajoute un like à une vidéo. |
-| **PATCH** | `/api/videos/dislike-video/:id` | Retire un like d'une vidéo. |
-| **GET** | `/api/videos/all-videos-and-clips` | Récupère tous les contenus (clips + vidéos). |
+| **GET** | `/videos/` | Récupère toutes les vidéos. |
+| **GET** | `/videos/last-video` | Récupère la dernière vidéo ajoutée. |
+| **GET** | `/videos/:url` | Récupère une vidéo spécifique via son URL. |
+| **POST** | `/videos/` | Ajoute une nouvelle vidéo. |
+| **PUT** | `/videos/:id` | Modifie une vidéo existante. |
+| **DELETE** | `/videos/:id` | Supprime une vidéo. |
+| **GET** | `/videos/categories/:categorie` | Récupère les vidéos d’une catégorie spécifique. |
+| **GET** | `/videos/video-liked/:userId` | Récupère les vidéos aimées par un utilisateur. |
+| **PATCH** | `/videos/like-video/:id` | Ajoute un like à une vidéo. |
+| **PATCH** | `/videos/dislike-video/:id` | Retire un like d'une vidéo. |
+| **GET** | `/videos/all-videos-and-clips` | Récupère tous les contenus (clips + vidéos). |
 
 ---
 
@@ -68,11 +68,12 @@ Une fois l'API démarrée, vous pouvez interagir avec les différentes ressource
 
 | Méthode | Endpoint | Description |
 |---------|---------|-------------|
-| **GET** | `/api/artistes/` | Récupère la liste de tous les artistes. |
-| **POST** | `/api/artistes/` | Ajoute un nouvel artiste. |
-| **PUT** | `/api/artistes/:id` | Modifie un artiste existant. |
-| **DELETE** | `/api/artistes/:id` | Supprime un artiste. |
-| **GET** | `/api/artistes/:name` | Récupère un artiste via son nom. |
+| **GET** | `/artistes/` | Récupère la liste de tous les artistes. |
+| **POST** | `/artistes/` | Ajoute un nouvel artiste. |
+| **PUT** | `/artistes/:id` | Modifie un artiste existant. |
+| **DELETE** | `/artistes/:id` | Supprime un artiste. |
+| **GET** | `/artistes/:name` | Récupère un artiste via son nom. |
 
-## Lien vers un projet qui l'utilise
-[VALD-FC](http://vald-fc.netlify.app/)
+## Lien utile
+Projet qui utilise l'API: [VALD-FC](http://vald-fc.netlify.app/)
+lien de l'API: [Railway](https://api-vald.up.railway.app)
