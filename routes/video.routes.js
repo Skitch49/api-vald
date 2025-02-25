@@ -10,6 +10,7 @@ const {
   getVideosByCategory,
   editVideo,
   deleteVideos,
+  getAllContent,
 } = require("../controllers/video.controller");
 const router = express.Router();
 
@@ -35,5 +36,7 @@ router.get("/video-liked/:userId", getVideosLiked);
 router.patch("/like-video/:id", patchVideoLiked);
 
 router.patch("/dislike-video/:id/", patchVideoDisliked);
+
+router.get("/all-videos-and-clips", getAllContent);
 
 module.exports = router;

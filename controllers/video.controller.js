@@ -1,5 +1,6 @@
 const videoModel = require("../models/video.model");
 const artisteModel = require("../models/artiste.model");
+const clipModel = require("../models/clip.model");
 module.exports.getVideos = async (req, res) => {
   try {
     const videos = await videoModel.find().populate({
@@ -8,7 +9,7 @@ module.exports.getVideos = async (req, res) => {
       select: "nameArtiste socialMedia",
     });
 
-    res.status(200).json(videos);
+    res.status(201).json(videos);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error" });
@@ -74,7 +75,7 @@ module.exports.getVideosByCategory = async (req, res) => {
       select: "nameArtiste socialMedia",
     });
 
-    res.status(200).json(videos);
+    res.status(201).json(videos);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error" });
@@ -95,7 +96,7 @@ module.exports.editVideo = async (req, res) => {
       { new: true }
     );
 
-    res.status(200).json(updatedVideo);
+    res.status(201).json(updatedVideo);
   } catch (error) {
     console.error("Erreur lors de la mise à jour de la video :", error);
     res.status(500).json({
@@ -112,7 +113,7 @@ module.exports.deleteVideos = async (req, res) => {
       return res.status(400).json({ message: "Cette vidéo n'existe pas !" });
     }
     await videoModel.deleteOne({ _id: req.params.id });
-    res.status(200).json({ message: "Vidéo supprimé id :" + req.params.id });
+    res.status(201).json({ message: "Vidéo supprimé id :" + req.params.id });
   } catch (error) {
     console.error("Erreur lors de la suppression de la vidéo :", error);
     res.status(500).json({
@@ -137,32 +138,32 @@ module.exports.deleteVideos = async (req, res) => {
 //       .populate({
 //         path: "produced",
 //         model: artisteModel,
-//         select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+//         select: "nameArtiste socialMedia",
 //       })
 //       .populate({
 //         path: "mix",
 //         model: artisteModel,
-//         select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+//         select: "nameArtiste socialMedia",
 //       })
 //       .populate({
 //         path: "mastering",
 //         model: artisteModel,
-//         select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+//         select: "nameArtiste socialMedia",
 //       })
 //       .populate({
 //         path: "production",
 //         model: artisteModel,
-//         select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+//         select: "nameArtiste socialMedia",
 //       })
 //       .populate({
 //         path: "real",
 //         model: artisteModel,
-//         select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+//         select: "nameArtiste socialMedia",
 //       })
 //       .populate({
 //         path: "artiste",
 //         model: artisteModel,
-//         select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+//         select: "nameArtiste socialMedia",
 //       })
 //       .populate({
 //         path: "featuring",
@@ -189,7 +190,7 @@ module.exports.getLastVideo = async (req, res) => {
       .populate({
         path: "author",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia",
       });
 
     res.status(201).json(lastvideo);
@@ -212,7 +213,7 @@ module.exports.patchVideoLiked = async (req, res) => {
         { $addToSet: { likers: req.body.userId } },
         { new: true }
       )
-      .then((data) => res.status(200).send(data));
+      .then((data) => res.status(201).send(data));
   } catch (err) {
     res.status(400).json(err);
   }
@@ -238,7 +239,7 @@ module.exports.getVideosLiked = async (req, res) => {
     const videosLiked = await videoModel.find({ likers: userId }).populate({
       path: "author",
       model: artisteModel,
-      select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      select: "nameArtiste socialMedia",
     });
 
     if (!videosLiked.length) {
@@ -248,6 +249,71 @@ module.exports.getVideosLiked = async (req, res) => {
     res.status(201).json(videosLiked);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Internal Server Error" + error.message });
+    res.status(500).json({
+      message: "Internal Server Error in getVideosLiked" + error.message,
+    });
+  }
+};
+
+module.exports.getAllContent = async (req, res) => {
+  try {
+    const videos = await videoModel.find().populate({
+      path: "author",
+      model: artisteModel,
+      select: "nameArtiste socialMedia",
+    });
+
+    const clips = await clipModel
+      .find()
+      .populate({
+        path: "produced",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "mix",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "mastering",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "production",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "real",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "artiste",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      })
+      .populate({
+        path: "featuring",
+        model: artisteModel,
+        select: "nameArtiste socialMedia",
+      });
+
+    if (videos && clips) {
+      const result = [...videos, ...clips];
+      res.status(201).json(result);
+    } else {
+      console.error("Aucun clip ou aucune video trouvé");
+      res.status(500).json({
+        message: "Aucun clip ou aucune video trouvé ",
+      });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      message: "Internal Server Error in getAllContent" + error.message,
+    });
   }
 };
