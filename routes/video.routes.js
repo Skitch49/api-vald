@@ -18,6 +18,8 @@ router.get("/", getVideos);
 
 router.get("/last-video", getLastVideo);
 
+router.get("/all-videos-and-clips", getAllContent);
+
 // router.get("/search/:query", searchClips);
 
 router.get("/:url", getVideoByUrl);
@@ -37,6 +39,5 @@ router.patch("/like-video/:id", patchVideoLiked);
 
 router.patch("/dislike-video/:id/", patchVideoDisliked);
 
-router.get("/all-videos-and-clips", getAllContent);
 
 module.exports = router;
