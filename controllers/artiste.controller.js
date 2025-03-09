@@ -2,7 +2,7 @@ const artisteModel = require("../models/artiste.model");
 
 module.exports.getArtistes = async (req, res) => {
   const artistes = await artisteModel.find();
-  res.status(200).json(artistes);
+  res.status(201).json(artistes);
 };
 
 module.exports.setArtistes = async (req, res) => {
@@ -24,7 +24,7 @@ module.exports.editArtistes = async (req, res) => {
     if (!artiste) {
       res.status(404).json({ message: "Artiste non trouvé" });
     } else {
-      res.status(200).json(artiste);
+      res.status(201).json(artiste);
     }
   } catch (error) {
     res.status(500).json({ message: "Erreur lors de la mise à jour de l'artiste" });
@@ -37,7 +37,7 @@ module.exports.deleteArtistes = async (req, res) => {
     if (!artiste) {
       res.status(404).json({ message: "Artiste non trouvé" });
     } else {
-      res.status(200).json({ message: "Artiste supprimé" });
+      res.status(201).json({ message: "Artiste supprimé" });
     }
   } catch (error) {
     res.status(500).json({ message: "Erreur lors de la suppression de l'artiste" });
@@ -50,7 +50,7 @@ module.exports.getArtisteByName = async (req, res) => {
     if (!artiste) {
       res.status(404).json({ message: "Artiste non trouvé" });
     } else {
-      res.status(200).json(artiste);
+      res.status(201).json(artiste);
     }
   } catch (error) {
     res.status(500).json({ message: "Erreur interne du serveur" });

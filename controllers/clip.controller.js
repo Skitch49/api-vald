@@ -9,32 +9,32 @@ module.exports.getClips = async (req, res) => {
       .populate({
         path: "produced",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mix",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mastering",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "production",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "real",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "artiste",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "featuring",
@@ -42,7 +42,7 @@ module.exports.getClips = async (req, res) => {
         select: "nameArtiste socialMedia",
       });
 
-    res.status(200).json(clips);
+    res.status(201).json(clips);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error" });
@@ -57,32 +57,32 @@ module.exports.getClipByUrl = async (req, res) => {
       .populate({
         path: "produced",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mix",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mastering",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "production",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "real",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "artiste",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "featuring",
@@ -295,10 +295,10 @@ module.exports.searchClips = async (req, res) => {
     ]);
     const allMedia = [...clips, ...videos]; // Combine clips and videos
 
-    res.status(200).json(allMedia);
+    res.status(201).json(allMedia);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Internal Server Error" });
+    res.status(500).json({ message: "Internal Server Error: "+error });
   }
 };
 
@@ -359,33 +359,91 @@ module.exports.setClips = async (req, res) => {
   } catch (error) {
     console.error("Erreur lors de la création du clip :", error);
     res.status(500).json({
-      message: "Une erreur est survenue lors de la création du clip.",
+      message: "Une erreur est survenue lors de la création du clip. ",error
     });
   }
 };
 
 module.exports.editClips = async (req, res) => {
   try {
-    const clip = await clipModel.findById(req.params.id);
+    const {
+      name,
+      date,
+      description,
+      url,
+      categorie,
+      produced,
+      mix,
+      mastering,
+      production,
+      real,
+      artiste,
+      featuring,
+    } = req.body;
 
+    if (!name || !date || !description || !url || !categorie || !artiste) {
+      return res.status(400).json({
+        message:
+          "Merci de fournir toutes les informations nécessaires pour mettre à jour le clip.",
+      });
+    }
+
+    const clip = await clipModel.findById(req.params.id);
     if (!clip) {
       return res.status(400).json({ message: "Ce clip n'existe pas !" });
     }
 
+    const updateData = {
+      name,
+      date,
+      description,
+      url,
+      categorie,
+      artiste,
+    };
+
+    if (Array.isArray(produced) && produced.length > 0) {
+      updateData.produced = produced;
+    }
+    if (Array.isArray(mix) && mix.length > 0) {
+      updateData.mix = mix;
+    }
+    if (mastering) {
+      updateData.mastering = mastering;
+    }
+    if (Array.isArray(production) && production.length > 0) {
+      updateData.production = production;
+    }
+    if (real) {
+      updateData.real = real;
+    }
+    if (Array.isArray(featuring) && featuring.length > 0) {
+      updateData.featuring = featuring;
+    }
+
+    console.log("Données pour la mise à jour :", updateData);
+
+    // Mettre à jour le clip
     const updatedClip = await clipModel.findByIdAndUpdate(
       req.params.id,
-      req.body,
-      { new: true }
+      updateData,
+      { new: true, runValidators: true }
     );
 
-    res.status(200).json(updatedClip);
+    if (!updatedClip) {
+      return res.status(500).json({ message: "Erreur lors de la mise à jour du clip." });
+    }
+
+    res.status(200).json({ message: "Clip mis à jour avec succès", updatedClip });
   } catch (error) {
     console.error("Erreur lors de la mise à jour du clip :", error);
     res.status(500).json({
       message: "Une erreur est survenue lors de la mise à jour du clip.",
+      error,
     });
   }
 };
+
 
 module.exports.deleteClips = async (req, res) => {
   try {
@@ -395,7 +453,7 @@ module.exports.deleteClips = async (req, res) => {
       return res.status(400).json({ message: "Ce clip n'existe pas !" });
     }
     await clipModel.deleteOne({ _id: req.params.id });
-    res.status(200).json({ message: "Clip supprimé id :" + req.params.id });
+    res.status(201).json({ message: "Clip supprimé id :" + req.params.id });
   } catch (error) {
     console.error("Erreur lors de la suppression du clip :", error);
     res.status(500).json({
@@ -420,32 +478,32 @@ module.exports.getClipsByDateRange = async (req, res) => {
       .populate({
         path: "produced",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mix",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mastering",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "production",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "real",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "artiste",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "featuring",
@@ -472,32 +530,32 @@ module.exports.getLastClip = async (req, res) => {
       .populate({
         path: "produced",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mix",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mastering",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "production",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "real",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "artiste",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "featuring",
@@ -523,7 +581,7 @@ module.exports.patchClipLiked = async (req, res) => {
         { $addToSet: { likers: req.body.userId } },
         { new: true }
       )
-      .then((data) => res.status(200).send(data));
+      .then((data) => res.status(201).send(data));
   } catch (err) {
     res.status(400).json(err);
   }
@@ -551,32 +609,32 @@ module.exports.getClipsLiked = async (req, res) => {
       .populate({
         path: "produced",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mix",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mastering",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "production",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "real",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "artiste",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "featuring",
@@ -601,7 +659,7 @@ module.exports.getAllVideosLiked = async (req, res) => {
     const videosLiked = await videoModel.find({ likers: userId }).populate({
       path: "author",
       model: artisteModel,
-      select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+      select: "nameArtiste socialMedia", 
     });
 
     const clipsLiked = await clipModel
@@ -609,32 +667,32 @@ module.exports.getAllVideosLiked = async (req, res) => {
       .populate({
         path: "produced",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mix",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "mastering",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "production",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "real",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "artiste",
         model: artisteModel,
-        select: "nameArtiste socialMedia", // Sélectionnez les champs nécessaires
+        select: "nameArtiste socialMedia", 
       })
       .populate({
         path: "featuring",
@@ -701,7 +759,7 @@ module.exports.getAllVideosByCategory = async (req, res) => {
 
     const AllVideosByCat = [...clips, ...videos];
 
-    res.status(200).json(AllVideosByCat);
+    res.status(201).json(AllVideosByCat);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error" });

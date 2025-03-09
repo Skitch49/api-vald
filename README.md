@@ -75,5 +75,5 @@ Une fois l'API démarrée, vous pouvez interagir avec les différentes ressource
 | **GET** | `/artistes/:name` | Récupère un artiste via son nom. |
 
 ## Lien utile
-Projet qui utilise l'API: [VALD-FC](http://vald-fc.netlify.app/)
-lien de l'API: [Railway](https://api-vald.up.railway.app)
+- Projet qui utilise l'API: [VALD-FC](http://vald-fc.netlify.app/)
+- lien de l'API: [Railway](https://api-vald.up.railway.app)
