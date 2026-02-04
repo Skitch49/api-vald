@@ -4,6 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv").config();
 const nodemailer = require("nodemailer");
 const port = 3000;
+const job = require("./cron");
 
 const app = express();
 
